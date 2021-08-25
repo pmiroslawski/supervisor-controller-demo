@@ -1,0 +1,14 @@
+bit9_supervisor_controller:
+     queues:
+         - name: messages
+           host: '%env(RABBITMQ_HTTP_API_HOST)%'
+           type: "rabbitmq"
+           consumer: message_consumer
+           numprocs: 50               # run 50 if more than 10000
+           thresholds:
+              - messages: 100         # run 3 processes if less than 100 elements in queue 
+                num: 5
+              - messages: 1000        # run 5 processes if less than 1000 elements in queue 
+                num: 10
+              - messages: 10000       # run 10 processes if less than 10000 elements in queue 
+                num: 20

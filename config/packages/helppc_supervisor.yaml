@@ -1,0 +1,8 @@
+supervisor:
+    default_environment: all
+    servers:
+        all:
+            localhost:
+                scheme: http
+                host: '%env(SUPERVISOR_HOST)%'
+                port: '%env(SUPERVISOR_PORT)%'
