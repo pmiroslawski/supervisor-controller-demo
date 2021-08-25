@@ -13,6 +13,7 @@ Clone this reposiotory and copy a `.env` file to `.env.local` then:
 
 1.Update settings in .env.local file:
     ```
+    
         APP_ENV=dev
         APP_SECRET=XX
         SUPERVISOR_HOST=127.0.0.1
