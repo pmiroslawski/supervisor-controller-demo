@@ -11,7 +11,8 @@ The main goal of that application is to monitor RabbitMQ queue and start extra q
 
 Clone this reposiotory and ...
 
-1.Copy `.env` file to `.env.local` 
+1.Copy a `.env` file to `.env.local`
+
 1.Update settings in `.env.local` file
     ```sh
         ###> symfony/framework-bundle ###
