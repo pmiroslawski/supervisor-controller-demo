@@ -19,7 +19,8 @@ Clone this reposiotory and copy a `.env` file to `.env.local` then:
     SUPERVISOR_PORT=9001
     RABBITMQ_HTTP_API_HOST=http://root:root@127.0.0.1:15672/api/queues/%2F
     TELEGRAM_DSN=telegram://TOKEN@default?channel=CHAT_ID
-1. Update queues configuration and set proper thresholds for them in `config\packages\bit9_supervisor_controller.yaml`
+
+2. Update queues configuration and set proper thresholds for them in `config\packages\bit9_supervisor_controller.yaml`
     ```yaml
         bit9_supervisor_controller:
             queues:
@@ -34,11 +35,13 @@ Clone this reposiotory and copy a `.env` file to `.env.local` then:
                     - messages: 10000       # run 10 processes if less than 10000 elements in queue 
                       num: 10
     ```
-1. Clear application cache
+
+3. Clear application cache
     ```
         ./bin/console cache:clear
     ```
-1. Add to the cron below command:
+
+4. Add to the cron below command:
     ```
         ./bin/console supervisor:queues:watchdog
     ```
