@@ -12,7 +12,7 @@ The main goal of that application is to monitor RabbitMQ queue and start extra q
 Clone this reposiotory and copy a `.env` file to `.env.local` then:
 
 1.Update settings in .env.local file:
-    ```ini
+    ```
         APP_ENV=dev
         APP_SECRET=XX
         SUPERVISOR_HOST=127.0.0.1
