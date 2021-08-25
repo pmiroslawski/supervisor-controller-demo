@@ -19,7 +19,6 @@ Clone this reposiotory and copy a `.env` file to `.env.local` then:
     SUPERVISOR_PORT=9001
     RABBITMQ_HTTP_API_HOST=http://root:root@127.0.0.1:15672/api/queues/%2F
     TELEGRAM_DSN=telegram://TOKEN@default?channel=CHAT_ID
-
 1. Update queues configuration and set proper thresholds for them in `config\packages\bit9_supervisor_controller.yaml`
     ```yaml
         bit9_supervisor_controller:
