@@ -9,12 +9,10 @@ The main goal of that application is to monitor RabbitMQ queue and start extra q
 
 ## Installation
 
-Clone this reposiotory and ...
+Clone this reposiotory and copy a `.env` file to `.env.local` then
 
-1.Copy a `.env` file to `.env.local`
-
-1.Update settings in `.env.local` file
-    ```sh
+1.Update settings in `.env.local`
+    ```
         ###> symfony/framework-bundle ###
         APP_ENV=dev
         APP_SECRET=
