@@ -10,6 +10,7 @@ The main goal of that application is to monitor RabbitMQ queue and start extra q
 ## Installation
 
 Clone this reposiotory and ...
+
 1.Copy `.env` file to `.env.local` 
 1.Update settings in `.env.local` file
     ```sh
