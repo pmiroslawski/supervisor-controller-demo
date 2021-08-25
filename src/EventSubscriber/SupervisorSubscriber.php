@@ -33,7 +33,12 @@ class SupervisorSubscriber implements EventSubscriberInterface
             ->transport('telegram')
         ;
 
-        return $this->chatter->send($message);
+        try {
+            return $this->chatter->send($message);
+        }
+        catch (\Exception $e) {
+            // @todo: log error
+        }
     }
 
     public static function getSubscribedEvents(): array
