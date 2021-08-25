@@ -74,7 +74,7 @@ class SupervisorSubscriber implements EventSubscriberInterface
     public function onProcessesStopped(ProcessesStoppedEvent $event)
     {
         $text = "[Supervisor Watchdog Service] ";
-        $text .= sprintf("Decreased number of consumers for group %s \nCurrently %d consumers %s running.", $event->getProgramName(), $event->getProcessesNum(), $event->getProcessesNum() == 1 ? 'consumer is' : 'consumers are');
+        $text .= sprintf("Decreased number of consumers for group %s \nCurrently %d %s running.", $event->getProgramName(), $event->getProcessesNum(), $event->getProcessesNum() == 1 ? 'consumer is' : 'consumers are');
 
         $this->notify($text);
     }
