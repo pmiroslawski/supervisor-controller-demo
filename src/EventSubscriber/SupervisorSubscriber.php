@@ -48,19 +48,22 @@ class SupervisorSubscriber implements EventSubscriberInterface
 
     public function onProcessStarted(ProcessStartedEvent $event)
     {
+        /*
         $text = "[Supervisor Watchdog Service] ";
         $text .= sprintf("started process %s", $event->getProcessName());
 
         $this->notify($text);
-
+        */
     }
 
     public function onProcessStopped(ProcessStoppedEvent $event)
     {
+        /*
         $text = "[Supervisor Watchdog Service] ";
         $text .= sprintf("stopped process %s", $event->getProcessName());
 
         $this->notify($text);
+        */
     }
 
     public function onProcessesStarted(ProcessesStartedEvent $event)
