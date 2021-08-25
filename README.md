@@ -12,15 +12,14 @@ The main goal of that application is to monitor RabbitMQ queue and start extra q
 Clone this reposiotory and copy a `.env` file to `.env.local` then:
 
 1.Update settings in .env.local file:
-    ```
-    
-        APP_ENV=dev
-        APP_SECRET=XX
-        SUPERVISOR_HOST=127.0.0.1
-        SUPERVISOR_PORT=9001
-        RABBITMQ_HTTP_API_HOST=http://root:root@127.0.0.1:15672/api/queues/%2F
-        TELEGRAM_DSN=telegram://TOKEN@default?channel=CHAT_ID
-    ```
+
+    APP_ENV=dev
+    APP_SECRET=XX
+    SUPERVISOR_HOST=127.0.0.1
+    SUPERVISOR_PORT=9001
+    RABBITMQ_HTTP_API_HOST=http://root:root@127.0.0.1:15672/api/queues/%2F
+    TELEGRAM_DSN=telegram://TOKEN@default?channel=CHAT_ID
+
 1. Update queues configuration and set proper thresholds for them in `config\packages\bit9_supervisor_controller.yaml`
     ```yaml
         bit9_supervisor_controller:
