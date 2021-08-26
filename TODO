@@ -1,0 +1,2 @@
+- notify if can't connect to supervisor
+- notify if monitor can't connect to rabbitmq
